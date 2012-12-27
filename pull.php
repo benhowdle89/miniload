@@ -1,3 +1,2 @@
 <?php
-//`git pull origin master`;
-shell_exec('ls');
+shell_exec('/usr/bin/php git pull origin master');
