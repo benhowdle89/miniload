@@ -1,4 +1,4 @@
 <?php
 //echo system('git pull origin master');
-$output = exec('whoami');
+$output = exec('sudo whoami');
 echo $output;
