@@ -1,2 +1,2 @@
 <?php
-echo exec('sudo git pull origin master');
+echo system('git pull origin master');
