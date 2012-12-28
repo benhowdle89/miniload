@@ -1,5 +1,3 @@
 <?php
-$output = exec('sudo git pull origin master');
-//$output = exec('git status');
-//$output = exec('touch test.txt');
-echo $output;
+$file = fopen( '/home/miniload/git-pull-requests/miniload', 'w+' );
+fclose( $file );
