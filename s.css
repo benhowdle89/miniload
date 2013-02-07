@@ -1,0 +1,378 @@
+*, body, button, input, textarea, select {
+	text-rendering: optimizeLegibility;
+	font-size:100%;
+}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+	margin:0;
+	padding:0;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+fieldset,img { 
+	border:0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+	font-style:normal;
+	font-weight:normal;
+}
+ol,ul {
+	list-style:none;
+}
+caption,th {
+	text-align:left;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-size:100%;
+	font-weight:normal;
+}
+q:before,q:after {
+	content:'';
+}
+abbr,acronym {
+	border:0;
+}
+::selection {
+	background-color: #5cb3df;
+	color: #fff;
+}
+
+.preload {
+	background-image: url('/i/keyframes.png');
+}
+@-webkit-keyframes miniload {
+	0% {
+		background-image: url('/i/keyframes.png');
+		background-position: 0 0;
+	}
+	100% {
+		background-image: url('/i/keyframes.png');
+		background-position: 100% 0;
+	}
+}
+.logo:hover {
+	-webkit-animation: miniload 1s .4s steps(27, start) both;
+}
+body {
+	background-color: #efeff3;
+	background-image: -webkit-linear-gradient(45deg, transparent 40%, hsla(18,100%,69%,.025) 40%, hsla(18,100%,69%,.025) 60%, transparent 60%),
+	  -webkit-linear-gradient(-45deg, transparent 40%, hsla(200,67%,62%,.025) 40%, hsla(200,67%,62%,.025) 60%, transparent 60%);
+	background-size: 24px 24px;
+}
+header {
+	background-color: #5cb3df;
+	box-shadow: 0 3px 0 hsla(0,0%,0%,.05);
+	margin-bottom: 12px;
+	overflow: hidden;
+	padding: 24px;
+}
+.wrapper {
+	margin: 0 auto;
+	max-width: 720px;
+}
+.logo {
+	background-color: #fff;
+	background-image: url('/i/logo.png');
+	background-repeat: no-repeat;
+	border: 12px solid #fff;
+	border-radius: 8px;
+	display: inline-block;
+	height: 48px;
+	margin-right: 20px;
+	vertical-align: top;
+	width: 48px;
+}
+h1 {
+	color: #fff;
+	display: inline-block;
+	font: bold 72px/72px "futura-pt", sans-serif;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	vertical-align: top;
+}
+.twitter {
+	background-color: hsla(0,0%,0%,.1);
+	border-radius: 4px;
+	box-shadow: inset 0 0 0 24px hsla(0,0%,0%,0);
+	float: right;
+	height: 48px;
+	margin-top: 12px;
+	text-decoration: none;
+	text-transform: uppercase;
+	width: 48px;
+	-webkit-transition: .1s;
+}
+.twitter:hover,
+.twitter:focus {
+	box-shadow: inset 0 0 0 24px hsla(0,0%,0%,.1);
+}
+.content {
+	padding: 24px 24px 0;
+}
+.section {
+	margin-bottom: 36px;
+}
+.output {
+	display: none;
+}
+.input > p,
+.output > p {
+	color: hsla(0,0%,0%,.3);
+	float: right;
+	font: bold 14px/24px "futura-pt", sans-serif;
+	margin-top: 12px;
+	pointer-events: none;
+	text-transform: uppercase;
+}
+label {
+	background-color: #ff9363;
+	border-radius: 8px 8px 0 0;
+	color: #fff;
+	cursor: pointer;
+	display: block;
+	font: bold 24px/36px "futura-pt", sans-serif;
+	padding: 6px 12px 0;
+	text-transform: uppercase;
+	-webkit-transition: .1s;
+}
+.active label {
+	background-color: #ee8252;
+}
+textarea {
+	background-attachment: local;
+	background-image: -webkit-linear-gradient(transparent 97%, hsla(0,0%,0%,.05) 97%);
+	background-size: 24px 24px;
+	border: 6px solid #ff9363;
+	border-left-width: 12px;
+	border-right-width: 12px;
+	color: #445;
+	font: 15px/24px monospace, sans-serif;
+	min-height: 312px;
+	outline: none;
+	padding: 6px 12px;
+	resize: vertical;
+	width: 100%;
+	vertical-align: top;
+	-webkit-box-sizing: border-box;
+	-webkit-transition: .1s;
+}
+textarea::-webkit-input-placeholder {
+	padding: 120px 220px 0;
+	text-align: center;
+}
+.active textarea {
+	border-color: #ee8252;
+	outline: none;
+}
+.upload,
+.download {
+	background-color: #ff9363;
+	border-radius: 0 0 8px 8px;
+	padding: 6px 12px 12px;
+	-webkit-transition: .1s;
+}
+.active .upload {
+	background-color: #ee8252;
+}
+.upload-methods {
+	float: right;
+	margin: 12px 12px 0;;
+}
+.upload-methods p {
+	color: hsla(0,0%,0%,.3);
+	display: inline-block;
+	font: bold 14px/24px "futura-pt", sans-serif;
+	margin-right: 2px;
+	text-transform: uppercase;
+	vertical-align: top;
+}
+.upload-methods .methods {
+	display: inline-block;
+	vertical-align: top;
+}
+.upload-methods .methods li {
+	border-radius: 2px;
+	display: inline-block;
+	height: 24px;
+	position: relative;
+	width: 24px;
+	vertical-align: top;
+}
+.upload-methods .methods li:after {
+	background-color: hsla(0,0%,0%,.6);
+	border-radius: 2px;
+	bottom: 32px;
+	color: #fff;
+	content: attr(data-tooltip);
+	font: bold 14px/24px "futura-pt", sans-serif;
+	left: -48px;
+	opacity: 0;
+	position: absolute;
+	text-align: center;
+	text-transform: uppercase;
+	width: 120px;
+	visibility: hidden;
+	-webkit-transition: .1s;
+}
+.upload-methods .methods li:before {
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-top: 6px solid hsla(0,0%,0%,.6);
+	bottom: 26px;
+	content: '';
+	height: 0;
+	left: 6px;
+	opacity: 0;
+	position: absolute;
+	width: 0;
+	visibility: hidden;
+	-webkit-transition: .1s;
+}
+.upload-methods .methods li:hover:after,
+.upload-methods .methods li:hover:before {
+	opacity: 1;
+	visibility: visible;
+}
+.files {
+	background-color: #fff;
+	border-radius: 4px;
+	overflow: hidden;
+	padding: 6px;
+}
+.files h3 {
+	color: hsla(0,0%,0%,.6);
+	font: bold 16px/24px "futura-pt", sans-serif;
+	text-transform: uppercase;
+}
+.files ul {
+	display: inline-block;
+	vertical-align: top;
+}
+.files li {
+	background-color: hsla(0,0%,0%,.2);
+	border-radius: 2px;
+	color: hsla(0,0%,0%,.4);
+	display: inline-block;
+	font: bold 14px/24px "futura-pt", sans-serif;
+	margin-right: 2px;
+	padding: 0 12px;
+	text-transform: uppercase;
+	vertical-align: top;
+}
+.files li a {
+	background-color: hsla(0,0%,0%,.1);
+	border-radius: 0 2px 2px 0;
+	box-shadow: inset 0 0 0 36px hsla(0,0%,0%,0);
+	color: #fff;
+	display: inline-block;
+	font: bold 24px/24px "futura-pt", sans-serif;
+	margin-left: 12px;
+	margin-right: -12px;
+	text-align: center;
+	text-decoration: none;
+	width: 24px;
+	vertical-align: top;
+	-webkit-transition: .1s;
+}
+.files li a:hover,
+.files li a:focus {
+	box-shadow: inset 0 0 0 36px hsla(0,0%,0%,.1);
+}
+.browse {
+	background-color: #5cb3df;
+	border-radius: 2px;
+	box-shadow: inset 0 0 0 36px hsla(0,0%,0%,0);
+	color: #fff;
+	float: right;
+	font: bold 14px/24px "futura-pt", sans-serif;
+	height: 24px;
+	padding: 0 12px;
+	text-decoration: none;
+	text-transform: uppercase;
+	-webkit-transition: .1s;
+}
+.browse:hover,
+.browse:focus {
+	box-shadow: inset 0 0 0 36px hsla(0,0%,0%,.1);
+}
+.raw {
+	background-color: hsla(0,0%,0%,.3);
+	border-radius: 2px;
+	box-shadow: inset 0 0 0 36px hsla(0,0%,0%,0);
+	color: #fff;
+	float: right;
+	font: bold 14px/24px "futura-pt", sans-serif;
+	margin-left: 6px;
+	margin-right: 12px;
+	margin-top: 12px;
+	padding: 0 12px;
+	text-decoration: none;
+	text-transform: uppercase;
+	-webkit-transition: .1s;
+}
+.raw:hover,
+.raw:focus {
+	box-shadow: inset 0 0 0 36px hsla(0,0%,0%,.1);
+}
+.download {
+	text-align: right;
+}
+.download ul {
+	display: inline-block;
+	vertical-align: top;
+}
+.download li {
+	display: inline-block;
+	vertical-align: top;
+}
+.download a {
+	background-color: #fff;
+	border-radius: 2px;
+	box-shadow: inset 0 0 0 36px hsla(0,0%,0%,0);
+	color: hsla(0,0%,0%,.6);
+	display: block;
+	font: bold 14px/24px "futura-pt", sans-serif;
+	padding: 0 12px;
+	text-decoration: none;
+	text-transform: uppercase;
+	-webkit-transition: .1s;
+}
+.download a:hover,
+.download a:focus {
+	box-shadow: inset 0 0 0 36px hsla(0,0%,0%,.05);
+}
+.submit {
+	background-color: #5cb3df;
+	border-radius: 8px;
+	box-shadow: inset 0 0 0 48px hsla(0,0%,0%,0);
+	color: #fff;
+	display: block;
+	font: bold 30px/48px "futura-pt", sans-serif;
+	margin-bottom: 36px;
+	padding: 18px 24px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	-webkit-transition: .1s;
+}
+.submit:hover,
+.submit:focus {
+	box-shadow: inset 0 0 0 48px hsla(0,0%,0%,.1);
+}
+footer p {
+	color: hsla(0,0%,0%,.3);
+	font: bold 16px/24px "futura-pt", sans-serif;
+	margin-bottom: 36px;
+	text-align: center;
+	text-transform: uppercase;
+}
+footer a {
+	color: #5cb3df;
+	text-decoration: none;
+	-webkit-transition: .1s;
+}
+footer a:hover,
+footer a:focus {
+	color: #4ba2ce;
+}
